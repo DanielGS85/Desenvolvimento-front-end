@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <main>
+<form>
+    <fieldset>
+        <legend>Dados pessoais</legend> <!--<fieldset>: Cria automaticamente a caixa (uma borda linear) ao redor de todo o formulário para agrupar os elementos.<legend>: Define o título da caixa e faz com que o texto fique posicionado exatamente em cima da linha superior, alinhado à esquerda por padrão.-->
+            
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text"
+                placeholder="Exemplo... Joao"><br>
+                <label for="endereco">Endereco:</label>
+                <input type="text"
+                placeholder="Exemplo... Rua tal"><br>
+                <label for="endereco">Endereco:</label>
+                <input type="text"
+                placeholder="Exemplo... Peropolis"><br>
+            </form>
+            <label for="estado">Estado:</label>
+        <select id="estado">
+            <option>Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <option>Minas Gerais</option>
+            <option>Bahia</option>
+        </select>
+    </fieldset>
+</form>
+        <div>
+            <form>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+            <label for="natureza do cardo">Naturza dos Dados</label>
+        <select>
+            <option>gerente</option>
+            <option>funcionario</option>
+           </select>
+           <h3>Area de Interese</h3>
+           <ul class="lista-caixas">
+               <input type="checkbox" id="item1">
+               <label for="item1">Computacao</label><br>
+               <input type="checkbox" id="item2">
+               <label for="item2">Biologia</label><br> 
+               <input type="checkbox" id="item3">
+               <label for="item3">Meio Ambiente</label><br>
+               <input type="checkbox" id="item2">
+               <label for="item2">Engenharia</label><br>
+               <input type="checkbox" id="item2">
+               <label for="item2">Historia</label><br>
+               
+            </ul>
+             <div>
+            <label for="bio">Mini Curriculo</label>
+        <br><textarea
+             id="bio"
+            placeholder="Conte um pouco sobre você…">
+            </textarea><br>
+            <form>
+        </div>
+            
+            </fieldset>
+        </form>
+        </div>
+            <br><button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </main>
+    </body>
+</html>
