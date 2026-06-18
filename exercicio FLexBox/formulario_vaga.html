@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Vaga</title>
+
+    <meta name="description" content="Formulário de candidatura">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/exercicio FlexBox/styles.css">
+</head>
+
+<body>
+
+    <main class="container-formulario">
+        
+        <form class="formulario-cadastro-1">
+            
+            <!-- DADOS PESSOAIS -->
+            <section class="dados-pessoais">
+                
+                <fieldset class="grupo-formulario">
+                    
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Exemplo... João">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="endereco">Endereço:</label>
+                        <input
+                        type="text"
+                        id="endereco"
+                        name="endereco"
+                        placeholder="Exemplo... Rua Tal">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="cidade">Cidade:</label>
+                        <input
+                        type="text"
+                        id="cidade"
+                        name="cidade"
+                        placeholder="Exemplo... Petrópolis">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="estado">Estado:</label>
+                        
+                        <select
+                        id="estado"
+                        name="estado">
+                        
+                        <option>Rio de Janeiro</option>
+                        <option>São Paulo</option>
+                        <option>Minas Gerais</option>
+                        <option>Bahia</option>
+                        
+                    </select>
+                </div>
+                
+            </fieldset>
+            
+        </section>
+        
+        <!-- DADOS PROFISSIONAIS -->
+        <section class="dados-profissionais">
+            
+            <fieldset class="grupo-formulario">
+                
+                <legend>Dados Profissionais</legend>
+                
+                <div class="campo">
+                    
+                    <label for="cargo">
+                        Natureza do Cargo
+                    </label>
+                    
+                    <select
+                    id="cargo"
+                            name="cargo">
+                            
+                            <option>Gerente</option>
+                            <option>Funcionário</option>
+                            
+                        </select>
+                        
+                    </div>
+                    
+                    <div class="grupo-checkbox">
+                        
+                        <h3>Área de Interesse</h3>
+                        
+                        <div class="checkbox-item">
+                            <input
+                            type="checkbox"
+                            id="computacao"
+                            name="interesse"
+                            value="computacao">
+                            
+                            <label for="computacao">
+                                Computação
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input
+                            type="checkbox"
+                            id="biologia"
+                            name="interesse"
+                            value="biologia">
+                            
+                            <label for="biologia">
+                                Biologia
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input
+                            type="checkbox"
+                            id="meio-ambiente"
+                            name="interesse"
+                            value="meio-ambiente">
+                            
+                            <label for="meio-ambiente">
+                                Meio Ambiente
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input
+                            type="checkbox"
+                            id="engenharia"
+                            name="interesse"
+                            value="engenharia">
+                            
+                            <label for="engenharia">
+                                Engenharia
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input
+                            type="checkbox"
+                            id="historia"
+                            name="interesse"
+                            value="historia">
+                            
+                            <label for="historia">
+                                História
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="campo-curriculo">
+                        
+                        <label for="bio">
+                            Mini Currículo
+                        </label>
+                        
+                        <textarea
+                        id="bio"
+                        name="bio"
+                        placeholder="Conte um pouco sobre você...">
+                    </textarea>
+                    
+                </div>
+                
+            </fieldset>
+            
+        </section>
+        
+        <!-- BOTÕES -->
+        <div class="acoes-formulario">
+            
+            <button
+            type="submit"
+            class="btn-enviar">
+            Enviar
+        </button>
+        
+        <button
+        type="reset"
+        class="btn-limpar">
+        Limpar
+    </button>
+    
+</div>
+
+</form>
+
+</main>
+
+</body>
+
+</html>

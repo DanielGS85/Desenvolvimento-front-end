@@ -1,0 +1,25 @@
+body{
+    /* background-color: navy; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-formulario{
+    
+    /* background-color: navy; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dados-pessoais{
+    background-color: navy;   
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
