@@ -205,8 +205,205 @@
 }
 
 .horizBranco{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 200px;
     position: absolute;
+}
+
+.bandeiraJordania{
+    display: flex;
+    padding-top: 2px;
+    margin-top: 40px;
+    height: 300px;
+    width: 400px;
+    align-items:center
+    /* background-color:rgb(0, 26, 255) */
+    /* flex-direction: column; */
+    
+}
+
+
+.jor-caixa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.jor-preto{
+    flex: 1;
+    background-color:rgb(2, 2, 2)
+}
+
+.jor-branco{
+    flex: 1;  
+    background-color:rgb(255, 255, 255)
+}
+
+.jor-verde{
+    flex: 1;
+    background-color:rgb(3, 99, 27)
+}
+
+.jor-triangulo{
+    height: 300px;
+    width: 150px;
+    background-color: red;
+    position: relative;
+    position: absolute;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+}
+
+.jor-estrela{
+    width: 50px;
+    height: 50px;
+    background: rgb(252, 252, 252);
+    position: absolute;
+    /* margin-top: 23%; */
+    left: 30px;
+    clip-path: polygon(
+
+        /* Ponta superior */
+        50% 0%,
+
+        /* Vale superior direito */
+        61% 35%,
+
+        /* Ponta direita */
+        98% 35%,
+
+        /* Vale inferior direito */
+        68% 57%,
+
+        /* Ponta inferior direita */
+        79% 91%,
+
+        /* Ponta inferior */
+        50% 70%,
+
+        /* Ponta inferior esquerda */
+        21% 91%,
+
+        /* Vale inferior esquerdo */
+        32% 57%,
+
+        /* Ponta esquerda */
+        2% 35%,
+
+        /* Vale superior esquerdo */
+        39% 35%
+    );
+}
+
+.bandeiraTrinidai{
+    background-color: red;
+    display: flex;
+    position: relative;
+    padding-top: 2px;
+    margin-top: 40px;
+    height: 270px;
+    width: 400px;
+    overflow: hidden;
+    align-items:center    
+}
+
+.tri-faixaBranca{
+    background-color:rgb(255, 255, 255);
+    height: 85px;
+    width: 485px;
+    left: -34px;
+    position:absolute;
+    transform: rotate( -32deg);
+    -webkit-transform: rotate( -32deg);
+    -moz-transform: rotate( -32deg);
+    -ms-transform: rotate( -32deg);
+    -o-transform: rotate( -32deg);
+}
+
+.tri-faixaPreta{
+    background-color:rgb(0, 0, 0);
+    height: 50px;
+    width: 565px;
+    left: -30px;
+    top: 20px;
+    position:absolute;
+    transform: rotate( -0deg);
+    -webkit-transform: rotate( -0deg);
+    -moz-transform: rotate( -0deg);
+    -ms-transform: rotate( -0deg);
+    -o-transform: rotate( -0deg);
+}
+
+.bandeiraTurqui{
+    background-color:rgb(244, 7, 7);
+    margin-top: 50px;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    display: flex;
+}
+
+
+.Tur-lua{
+    background-color:rgb(255, 255, 255);
+    width: 130px;
+    height: 200px;
+    position: relative;
+    left: 70px;
+    margin-top: 50px;
+    clip-path:circle()
+}
+
+.tur-lua2{
+    background-color:rgb(244, 7, 7);
+    width: 110px;
+    height: 200px;
+    position: relative;
+    left: -30px;
+    margin-top: 50px;
+    clip-path:circle()
+}
+
+.tur-estrela{
+    width: 50px;
+    height: 50px;
+    background: rgb(252, 252, 252);
+    position: absolute;
+    /* margin-top: 23%; */
+    left: 240px;
+    margin-top: 110px;
+    clip-path: polygon(
+
+        /* Ponta superior */
+        50% 0%,
+
+        /* Vale superior direito */
+        61% 35%,
+
+        /* Ponta direita */
+        98% 35%,
+
+        /* Vale inferior direito */
+        68% 57%,
+
+        /* Ponta inferior direita */
+        79% 91%,
+
+        /* Ponta inferior */
+        50% 70%,
+
+        /* Ponta inferior esquerda */
+        21% 91%,
+
+        /* Vale inferior esquerdo */
+        32% 57%,
+
+        /* Ponta esquerda */
+        2% 35%,
+
+        /* Vale superior esquerdo */
+        39% 35%
+    );
 }
