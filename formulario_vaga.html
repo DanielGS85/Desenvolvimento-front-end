@@ -1,74 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <main>
-<form>
-    <fieldset>
-        <legend>Dados pessoais</legend> <!--<fieldset>: Cria automaticamente a caixa (uma borda linear) ao redor de todo o formulário para agrupar os elementos.<legend>: Define o título da caixa e faz com que o texto fique posicionado exatamente em cima da linha superior, alinhado à esquerda por padrão.-->
-            
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text"
-                placeholder="Exemplo... Joao"><br>
-                <label for="endereco">Endereco:</label>
-                <input type="text"
-                placeholder="Exemplo... Rua tal"><br>
-                <label for="endereco">Endereco:</label>
-                <input type="text"
-                placeholder="Exemplo... Peropolis"><br>
-            </form>
-            <label for="estado">Estado:</label>
-        <select id="estado">
-            <option>Rio de Janeiro</option>
-            <option>São Paulo</option>
-            <option>Minas Gerais</option>
-            <option>Bahia</option>
-        </select>
-    </fieldset>
-</form>
-        <div>
-            <form>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <main class="container-formulario">
+
+        <form class="formulario">
+
             <fieldset>
-                <legend>Dados Profissionais</legend>
-            <label for="natureza do cardo">Naturza dos Dados</label>
-        <select>
-            <option>gerente</option>
-            <option>funcionario</option>
-           </select>
-           <h3>Area de Interese</h3>
-           <ul class="lista-caixas">
-               <input type="checkbox" id="item1">
-               <label for="item1">Computacao</label><br>
-               <input type="checkbox" id="item2">
-               <label for="item2">Biologia</label><br> 
-               <input type="checkbox" id="item3">
-               <label for="item3">Meio Ambiente</label><br>
-               <input type="checkbox" id="item2">
-               <label for="item2">Engenharia</label><br>
-               <input type="checkbox" id="item2">
-               <label for="item2">Historia</label><br>
-               
-            </ul>
-             <div>
-            <label for="bio">Mini Curriculo</label>
-        <br><textarea
-             id="bio"
-            placeholder="Conte um pouco sobre você…">
-            </textarea><br>
-            <form>
-        </div>
-            
+                <legend>DADOS PESSOAIS</legend>
+
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome completo">
+
+                <label for="endereco">Endereço</label>
+                <input
+                    type="text"
+                    id="endereco"
+                    placeholder="Rua, número">
+
+                <label for="cidade">Cidade</label>
+                <input
+                    type="text"
+                    id="cidade"
+                    placeholder="Sua cidade">
+
+                <label for="estado">Estado</label>
+
+                <select id="estado">
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Minas Gerais</option>
+                    <option>Espírito Santo</option>
+                </select>
+
             </fieldset>
+
+            <fieldset>
+
+                <legend>DADOS PROFISSIONAIS</legend>
+
+                <label for="cargo">Natureza do Cargo</label>
+
+                <select id="cargo">
+                    <option>Gerência</option>
+                    <option>Administrativo</option>
+                    <option>Técnico</option>
+                    <option>Operacional</option>
+                </select>
+
+                <p>Área de Interesse:</p>
+
+                <div class="grupo-checkbox">
+
+                    <label>
+                        <input type="checkbox">
+                        Computação
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Biologia
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Meio Ambiente
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Engenharia
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        História
+                    </label>
+
+                </div>
+
+                <label for="curriculo">
+                    Mini Currículo
+                </label>
+
+                <textarea
+                    id="curriculo"
+                    placeholder="Fale um pouco sobre você...">
+                </textarea>
+
+            </fieldset>
+
+            <div class="botoes">
+
+                <button
+                    type="submit"
+                    class="btn-enviar">
+                    Enviar
+                </button>
+
+                <button
+                    type="reset"
+                    class="btn-limpar">
+                    Limpar
+                </button>
+
+            </div>
+
         </form>
-        </div>
-            <br><button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </main>
-    </body>
+
+    </main>
+
+</body>
 </html>

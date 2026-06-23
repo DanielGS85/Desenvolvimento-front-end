@@ -1,25 +1,43 @@
-body{
-    /* background-color: navy; */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container-formulario{
-    
-    /* background-color: navy; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.dados-pessoais{
-    background-color: navy;   
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.grupo-formulario{
+.bandeiraEua{
+    background-color:burlywood;
+    width: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    position: absolute;
 }
+
+.fx_vermelho{
+    flex: 1;
+    background-color: red;
+}
+
+.fx_branca{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.quadradoAzul{
+    width: 150px;
+    height: calc(100%/14*7);
+    position: absolute;
+    background-color:rgb(0, 0, 255);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing:  border-box;
+    gap: 7px;
+}
+
+.estrela{
+    background-color: blanchedalmond;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
