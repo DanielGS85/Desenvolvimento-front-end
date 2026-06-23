@@ -8,15 +8,33 @@ for (let i = 0; i < 50; i++){
     
 }
 
-const bandeiraEua = document.querySelector('bandeiraEUA');
+const bandeiraEua = document.querySelector('.bandeiraEua');
 
-for (let i = 0; i < 7; i++){
+for (let i = 0; i < 6; i++){
     const fx_vermelho = document.createElement('div');
     fx_vermelho.className = 'fx_vermelho'
     bandeiraEua.appendChild(fx_vermelho);
-
-} for (let i = 0; i < 6; i++){
     const fx_branca = document.createElement('div');
-    fx_branca.className = 'fx_vermelho'
+    fx_branca.className = 'fx_branca'
     bandeiraEua.appendChild(fx_branca);
-}
+} 
+const fx_vermelho = document.createElement('div');
+    fx_vermelho.className = 'fx_vermelho'
+bandeiraEua.appendChild(fx_vermelho);
+    
+
+
+
+
+
+// for (let i = 0; i < 6; i++){
+//     const fx_vermelho = document.createElement('div');
+//     fx_vermelho.className = 'fx_vermelho'
+//     bandeiraEua.appendChild(fx_vermelho);
+//     const fx_branca = document.createElement('div');
+//     fx_branca.className = 'fx_branca'
+//     bandeiraEua.appendChild(fx_branca);
+// } 
+// const fx_vermelho = document.createElement('div');
+//     fx_vermelho.className = 'fx_vermelho'
+//     bandeiraEua.appendChild(fx_vermelho);

@@ -4,7 +4,7 @@
     height: 200px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
 }
 
 .fx_vermelho{
@@ -31,13 +31,44 @@
 
 .estrela{
     background-color: blanchedalmond;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    clip-path: polygon(
+
+        /* Ponta superior */
+        50% 0%,
+
+        /* Vale superior direito */
+        61% 35%,
+
+        /* Ponta direita */
+        98% 35%,
+
+        /* Vale inferior direito */
+        68% 57%,
+
+        /* Ponta inferior direita */
+        79% 91%,
+
+        /* Ponta inferior */
+        50% 70%,
+
+        /* Ponta inferior esquerda */
+        21% 91%,
+
+        /* Vale inferior esquerdo */
+        32% 57%,
+
+        /* Ponta esquerda */
+        2% 35%,
+
+        /* Vale superior esquerdo */
+        39% 35%)
+}
+.bandeira{
+        width: 300px;
+        height: 200px;
+        background-color: aliceblue
 }
 
 
